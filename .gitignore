@@ -1,2 +1,5 @@
 main.pdf
 auto/
+
+*.aux
+*.log
