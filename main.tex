@@ -1,5 +1,30 @@
 \documentclass{article}
+\usepackage{amsmath}  % DeclareMathOperator
+\usepackage{amssymb}  % mathbb
+\usepackage{mathtools}
+
+\DeclareMathOperator{\ran}{ran}
 
 \begin{document}
-This is a test.
+\section{Chapter 6}
+\subsection{4.}
+Let $f:[0, 1] \to (0, 1)$ be defined by
+\begin{equation}
+  f(x) = 
+  \begin{cases}
+    2^{-1} &\text{if } x=0; \\
+    2^{-2} &\text{if } x=2^0; \\
+    2^{-3} &\text{if } x=2^{-1}; \\
+    \vdotswithin{ 2^{-3}}\\
+    x & \text{otherwise}.
+  \end{cases}
+\end{equation}
+
+We want to show that if $f(a) = y$ and $f(b) = y$,
+then $a = b$.
+If $y = 2^{-1}$, then $a = b = 0$.
+If $y = 2^{-2}, 2^{-3}, dots$, then  $a = b = 2^0, 2^{-1}, \dots$.
+Otherwise, $y = a = b$.
+
+
 \end{document}
